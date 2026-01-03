@@ -1,0 +1,6 @@
+﻿numpy
+pandas
+pyquaternion
+matplotlib
+scikit-learn
+nuscenes-devkit
