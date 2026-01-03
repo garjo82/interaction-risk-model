@@ -15,13 +15,13 @@ These columns uniquely identify each interaction row.
 | Column | Type | Description |
 |---|---|---|
 | `scene_id` | string | Scenario identifier (dataset-specific) |
-| `timestamp_us` | int | Timestamp in microseconds (monotonic within scene) |
+| `timestamp_s` | float | Timestamp in seconds (monotonic within scene) |
 | `ego_id` | string | Ego identifier (may be constant per scene) |
 | `actor_id` | string | Other actor identifier |
 
 **Notes**
-- If a dataset does not provide microsecond timestamps, store seconds as a float in `timestamp_s`
-  and omit `timestamp_us`. (For nuScenes we can standardize one representation.)
+- `timestamp_s` is the canonical time representation for this project.
+- `dt_s` should be computed from adjacent timestamps and/or the differencing method used for velocity.
 
 ---
 
