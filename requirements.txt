@@ -4,3 +4,4 @@ pyquaternion
 matplotlib
 scikit-learn
 nuscenes-devkit
+pyarrow
